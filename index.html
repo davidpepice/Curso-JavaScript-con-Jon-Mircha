@@ -32,12 +32,45 @@
           te devuelva un Array de textos separados por cierto caracter,
           pe. miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal'].
           */
+        
+        
+        
+        
 
         /*
           4)Programa una función que repita un texto X veces,
            pe. miFuncion('Hola Mundo', 3) devolverá Hola Mundo 
            Hola Mundo Hola Mundo.
          */
+        
+        
+        
+        
+        
+        /*11) Programa una función que calcule el factorial de un número 
+        (El factorial de un entero positivo n, se define como el producto de todos los números
+        enteros positivos desde 1 hasta n), pe. miFuncion(5) devolverá 120.*/
+
+        
+        const factorial = (numero2 = undefined) => {
+            if(numero2 === undefined) return console.warn("No ingresaste un numero");
+
+            if(typeof numero2 !== "number") console.error(`El valor "${numero2}" ingresado No es un numero`);
+
+            if(numero2 === 0) console.error("El nummero no puede ser 0");
+            
+            if(Math.sign(numero2) === -1) return console.error(`El valor no puede ser negativo`);
+            
+            let factorial = 1;
+            for (let i = numero2; i > 1; i--) {
+                 factorial *= i;
+            }
+            //return console.info(`El factorial de ${numero2} es ${factorial}`); 
+        }
+        factorial();
+        factorial("5");
+        factorial([1,1,2]);
+        factorial(5);
     </script>
 </body>
 </html>
