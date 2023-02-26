@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <div id="elemento" style="width: 40px; height: 40px; background: rgb(0, 0, 255); "></div>
+    <script>
+        (function () { 
+            var elemento = document.getElementById("elemento");
+            addEventListener('mouseover', (event) => {});  
+            addEventListener('click', (event) => {});
+            addEventListener('mouseout', (event) => {});
+            addEventListener('contextmenu', (event) => {});
+            addEventListener('mousemove', (event) => {});
+            onclick = (event) => { 
+
+                var ramdonColor = ['red', 'blue', 'green', 'yellow', 'pink','black','orange'];
+
+                for (let i = 0; i < ramdonColor.length ; i++) {
+                     
+                    var otroElemento = Math.floor(Math.random() * ramdonColor.length); 
+
+                    elemento.style.backgroundColor = ramdonColor[otroElemento];
+
+                    //console.log(ramdonColor[otroElemento]); 
+                } 
+                    elemento.style.width = "40px";
+                    elemento.style.height = "40px";
+                    elemento.style.borderRadius = "40px";
+                    elemento.style.position = "relative";
+                    elemento.style.top = "50%";
+                    elemento.style.left = "0px";
+                    elemento.style.margin = "0px";
+             }; 
+             onmousemove = (event) => 
+             {
+                mouseX = event.clientX;
+                mouseY = event.clientY;
+
+                    elemento.style.width = "400px";
+                    elemento.style.height = "400px";
+                    elemento.style.borderRadius = "400px";
+                    elemento.style.position = "relative";
+                    elemento.style.top = "50%";
+                    elemento.style.left = "0px";
+                    elemento.style.margin = "0px";   
+                };
+                
+                
+                    
+                //    var otroArray = [];   
+                //    for (let i = 1; i < 11; i++) { 
+
+                //       otroArray.push(otroArray[i]) 
+
+                //        console.log(otroArray.push(i) );
+                //   }  
+                //   console.log("*******************************************");
+
+                //   var array = [];
+
+                //     for(let i = 1; i < 11 ; i++){ 
+                        
+                //         array.push(array[i])
+                //         if (array[i] === 4) {
+                //             break;
+                //         }
+                //         return console.log(array.push(array[i]));
+                         
+                    
+                //     }
+                //     return console.log("Se interrumpió la ejecución");
+
+
+                    console.log("**************************");
+
+                    var elementos = [];
+                    var otroArray = []; 
+                    for (let i = 1; i < elementos.length == 11; i++)
+                     {  
+                        otroArray.push(elementos[i])
+                         
+                        //console.log(elementos.push(otroArray[i]));
+                        console.log(otroArray[i]);
+                        // if (otroArray[i] === 5) {
+                        //     continue;
+                        // }
+                        
+                        
+                    }
+        })();
+    </script>
+</body>
+</html>
